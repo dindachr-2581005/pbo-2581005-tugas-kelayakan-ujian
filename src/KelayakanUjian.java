@@ -22,6 +22,25 @@ import java.util.Scanner;
             //negasi dispensasi
             boolean tidakDispensasi = !dispensasi;
 
+            //Output
+            System.out.println();
+            System.out.println("===== KELAYAKAN UJIAN =====");
+            System.out.println("Kehadiran   : " + kehadiran + "%");
+            System.out.println("Nilai tugas : " + nilaiTugas);
+            System.out.println("Dispensasi  : " + dispensasi);
+
+            System.out.println();
+            System.out.println("a (tanpa kurung)     : " + a);
+            System.out.println("b (kurung precedence): " + b);
+            System.out.println("c (kurung digeser)   : " + c);
+            System.out.println("!dispensasi          : " + tidakDispensasi);
+
+            /*
+            Hasil yang sama dengan a adalah b. Karena operator && memiliki precedence
+            lebih tinggi daripada ||.. Jadi, java membaca a persis seperti b. Kesimpulannya,
+            karena && mengikat lebih kuat daripada ||.
+             */
+
 
 
 
