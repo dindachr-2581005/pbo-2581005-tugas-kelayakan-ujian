@@ -41,8 +41,11 @@ import java.util.Scanner;
             karena && mengikat lebih kuat daripada ||.
              */
 
-
-
+        //Buktikan short-circuit
+            int cek = 0;
+            boolean x = (kehadiran >= 75) && (cek++ >= 0);
+            boolean y = (nilaiTugas >= 60) || (cek++ >= 0);
+            System.out.println("cek dipanggil       : " + cek);
 
             /*
              contoh kehadiran 60 dan nilai tugas 80:
